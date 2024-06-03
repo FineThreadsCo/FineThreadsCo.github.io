@@ -1,0 +1,12 @@
+.current-page {
+  text-decoration: underline;
+}
+
+.align-far-right {
+  justify-content: flex-end;
+}
+
+.horizontal-padding {
+  padding-left: 2%;
+  padding-right: 2%;
+}
