@@ -6,6 +6,7 @@ export default {
         main: "/index.html",
         about: "/about.html",
         services: "/services.html",
+        booking: "/booking.html",
       },
     },
   },
