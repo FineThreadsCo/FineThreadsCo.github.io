@@ -36,3 +36,11 @@
   margin: 10% 10px 1% 0;
   opacity: 0.5;
 }
+
+.container {
+  margin: 0 auto;
+}
+
+.custom-link {
+  text-decoration: none;
+}
