@@ -1,3 +1,15 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  & h1 {
+    font-family: "jomhuria", sans-serif;
+    text-decoration: underline;
+    font-size: 6em;
+  }
+  & h2 {
+    font-family: "Jomhuria", sans-serif;
+  }
+}
+
 .current-page {
   text-decoration: underline;
 }
@@ -30,9 +42,10 @@
   justify-content: flex-start;
 }
 
-.icon-row img {
-  width: 20px;
-  height: 20px;
-  margin: 10% 10px 1% 0;
-  opacity: 0.5;
+.container {
+  margin: 0 auto;
+}
+
+.custom-link {
+  text-decoration: none;
 }
