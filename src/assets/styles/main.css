@@ -7,7 +7,7 @@ body {
   }
   & h2 {
     font-family: "Jomhuria", sans-serif;
-  } 
+  }
 }
 
 .current-page {
@@ -40,13 +40,6 @@ body {
 .icon-row {
   display: flex;
   justify-content: flex-start;
-}
-
-.icon-row img {
-  width: 20px;
-  height: 20px;
-  margin: 10% 10px 1% 0;
-  opacity: 0.5;
 }
 
 .container {
