@@ -12,36 +12,26 @@ function Home() {
       <h1 className="text-center">Fine Threads co.</h1>
 
       <div className="row">
-        <div className="col-6 d-flex align-items-stretch">
+        <div className="image-grid">
           <img
-            src={image4}
+            src={image1}
             alt="Description of image 1"
-            className="img-fluid"
-            style={{ height: "200px", objectFit: "cover" }}
+            className="img-fluid image1"
           />
-        </div>
-        <div className="col-6 d-flex align-items-stretch">
           <img
             src={image2}
             alt="Description of image 2"
-            className="img-fluid"
-            style={{ height: "200px", objectFit: "cover" }}
+            className="img-fluid image2"
           />
-        </div>
-        <div className="col-6 d-flex align-items-stretch">
           <img
-            src={image1}
+            src={image4}
             alt="Description of image 3"
-            className="img-fluid"
-            style={{ height: "200px", objectFit: "cover" }}
+            className="img-fluid image3"
           />
-        </div>
-        <div className="col-6 d-flex align-items-stretch">
           <img
             src={image5}
             alt="Description of image 4"
-            className="img-fluid"
-            style={{ height: "200px", objectFit: "cover" }}
+            className="img-fluid image4"
           />
         </div>
       </div>
