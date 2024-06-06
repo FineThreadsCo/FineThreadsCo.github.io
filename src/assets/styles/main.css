@@ -1,5 +1,6 @@
 body {
   font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
   & h1 {
     font-family: "jomhuria", sans-serif;
     text-decoration: underline;
@@ -7,24 +8,39 @@ body {
   }
   & h2 {
     font-family: "Jomhuria", sans-serif;
+    font-size: 3em;
   }
-}
-
-.current-page {
-  text-decoration: underline;
 }
 
 .align-far-right {
   justify-content: flex-end;
 }
 
-.nav-padding {
-  padding: 2%;
-}
-
 .btn-dark {
   background-color: #000000 !important;
   border-color: #000000 !important;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px;
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0 auto;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us-image-size {
+  width: 80%;
+  height: 95%;
+  object-fit: cover;
 }
 
 .nav-item {
@@ -42,10 +58,75 @@ body {
   justify-content: flex-start;
 }
 
-.container {
-  margin: 0 auto;
+.booking-container {
+  padding: 0 15%;
+}
+
+@media (max-width: 1200px) {
+  .booking-container {
+    padding: 0;
+  }
+}
+
+.react-datepicker__day--selected {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.react-datepicker__day--today {
+  background-color: rgb(187, 187, 187);
+  color: black;
 }
 
 .custom-link {
   text-decoration: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: black !important;
+  color: white !important;
+}
+
+.underline-animation {
+  position: relative;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+.underline-animation.current-tab::after {
+  width: 100%;
+}
+
+/* These classes make the partial line below the header and above the footer, to act as a seperator. I think it looks cool */
+.border-top-line {
+  position: relative;
+}
+.border-top-line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.border-bottom-line {
+  position: relative;
+}
+.border-bottom-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
 }
