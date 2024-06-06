@@ -1,15 +1,17 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   overflow-x: hidden;
-  & h1 {
-    font-family: "jomhuria", sans-serif;
-    text-decoration: underline;
-    font-size: 6em;
-  }
-  & h2 {
-    font-family: "Jomhuria", sans-serif;
-    font-size: 3em;
-  }
+}
+
+h1 {
+  font-family: "jomhuria", sans-serif;
+  text-decoration: underline;
+  font-size: 6em;
+}
+
+h2 {
+  font-family: "Jomhuria", sans-serif;
+  font-size: 3em;
 }
 
 .align-far-right {
@@ -23,34 +25,24 @@ body {
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 0px;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 0;
   max-width: 50%;
   max-height: 50%;
   margin: 0 auto;
 }
 
-.image-grid img {
+.image-grid img,
+.about-us-image-size {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.about-us-image-size {
-  width: 80%;
-  height: 95%;
-  object-fit: cover;
-}
-
 .nav-item {
-  margin-right: 3%;
-}
-
-.nav-item {
+  margin: 0.5em 3% 0.5em 0;
   font-size: 0.8em;
   padding: 0.5em;
-  margin: 0.5em;
 }
 
 .icon-row {
@@ -72,6 +64,7 @@ body {
   background-color: rgb(0, 0, 0);
   color: white;
 }
+
 .react-datepicker__day--today {
   background-color: rgb(187, 187, 187);
   color: black;
@@ -82,15 +75,63 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: black !important;
-  color: white !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Add this line */
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.accordion-button.collapsed {
+  box-shadow: none;
+}
+
+.accordion-header:not(.collapsed) {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.animated-arrow {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.animated-arrow::after {
+  content: "→";
+  position: absolute;
+  opacity: 0;
+  top: -30%;
+  right: -10px;
+  transition: 0.2s all;
+  color: black;
+}
+
+.animated-arrow:hover::after {
+  right: -20px;
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .animated-arrow::after {
+    content: "";
+  }
 }
 
 .underline-animation {
   position: relative;
 }
 
-.underline-animation::after {
+.underline-animation::after,
+.underline-animation:hover::after,
+.underline-animation.current-tab::after {
   content: "";
   position: absolute;
   width: 0;
@@ -101,32 +142,33 @@ body {
   transition: width 0.3s;
 }
 
-.underline-animation:hover::after {
-  width: 100%;
-}
-
+.underline-animation:hover::after,
 .underline-animation.current-tab::after {
   width: 100%;
 }
 
-/* These classes make the partial line below the header and above the footer, to act as a seperator. I think it looks cool */
 .border-top-line {
   position: relative;
 }
+
 .border-top-line::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid black;
 }
+
 .border-bottom-line {
   position: relative;
 }
+
 .border-bottom-line::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid black;
 }

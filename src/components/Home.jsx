@@ -40,11 +40,11 @@ function Home() {
           <div className="accordion-item">
             <h3 className="accordion-header" id="headingOne">
               <button
-                className="accordion-button"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="collapseOne"
               >
                 <b>What are the opening hours?</b>
@@ -52,7 +52,7 @@ function Home() {
             </h3>
             <div
               id="collapseOne"
-              className="accordion-collapse collapse show"
+              className="accordion-collapse collapse"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionFAQ"
             >
@@ -87,8 +87,12 @@ function Home() {
                 needs and to minimize your wait time. However, we do accept
                 walk-ins on a first-come, first-served basis, subject to
                 availability. To reserve an appointment, customers need to book
-                online by filling out the appointment form.{" "}
-                <Link to="/booking">Book an appointment here.</Link>
+                online by filling out the appointment form. <br />
+                <Link to="/booking" className="animated-arrow">
+                  <i>
+                    <u>Book an appointment here.</u>
+                  </i>
+                </Link>
               </div>
             </div>
           </div>
