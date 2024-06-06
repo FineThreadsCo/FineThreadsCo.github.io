@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import image1 from "../assets/images/1.jpg";
 import image2 from "../assets/images/2.jpg";
 import image3 from "../assets/images/3.jpg";
@@ -88,7 +88,7 @@ function Home() {
                 walk-ins on a first-come, first-served basis, subject to
                 availability. To reserve an appointment, customers need to book
                 online by filling out the appointment form.{" "}
-                <a href="/booking">Book an appointment here.</a>
+                <Link to="/booking">Book an appointment here.</Link>
               </div>
             </div>
           </div>
@@ -159,12 +159,12 @@ function Home() {
           Book an appointment today, and speak to our experts:
         </h2>
         <div className="d-flex justify-content-center">
-          <a
+          <Link
             className="btn btn-dark text-white text-lg py-2 px-5"
-            href="/booking"
+            to="/booking"
           >
             Book
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 function Header() {
   const location = useLocation();
@@ -8,9 +8,9 @@ function Header() {
   return (
     <header className="header border-bottom-line mx-5 pt-2 pb-3">
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           Fine Threads co.
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,42 +26,42 @@ function Header() {
           <div className="container-fluid">
             <ul className="navbar-nav ml-auto align-far-right">
               <li className="nav-item mr-3">
-                <a
+                <Link
                   className={`nav-link text-dark fs-6 underline-animation ${
                     currentPage === "/" ? "current-tab" : ""
                   }`}
-                  href="/"
+                  to="/"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item mr-3">
-                <a
+                <Link
                   className={`nav-link text-dark fs-6 underline-animation ${
                     currentPage === "/about" ? "current-tab" : ""
                   }`}
-                  href="/about"
+                  to="/about"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item mr-3">
-                <a
+                <Link
                   className={`nav-link text-dark fs-6 underline-animation ${
                     currentPage === "/services" ? "current-tab" : ""
                   }`}
-                  href="/services"
+                  to="/services"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link btn btn-dark fs-6 text-white px-3 py-2"
-                  href="/booking"
+                  to="/booking"
                 >
                   Book an Appointment
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
