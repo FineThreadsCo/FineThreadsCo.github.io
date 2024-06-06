@@ -8,7 +8,7 @@ import image5 from "../assets/images/5.jpg";
 
 function Home() {
   return (
-    <div>
+    <div className="pb-5 px-5">
       <h1 className="text-center">Fine Threads co.</h1>
 
       <div className="row">
@@ -45,7 +45,7 @@ function Home() {
           />
         </div>
       </div>
-      <div className="p-5">
+      <div className="py-5">
         <h2>FAQ</h2>
         <div className="accordion" id="accordionFAQ">
           <div className="accordion-item">
@@ -169,12 +169,14 @@ function Home() {
         <h2 className="text-center">
           Book an appointment today, and speak to our experts:
         </h2>
-        <a
-          className="btn btn-dark text-white text-lg py-2 px-5"
-          href="/booking"
-        >
-          Book
-        </a>
+        <div className="d-flex justify-content-center">
+          <a
+            className="btn btn-dark text-white text-lg py-2 px-5"
+            href="/booking"
+          >
+            Book
+          </a>
+        </div>
       </div>
     </div>
   );

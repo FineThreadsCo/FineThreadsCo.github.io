@@ -6,7 +6,7 @@ function Header() {
   const currentPage = location.pathname;
 
   return (
-    <header className="header border-bottom-line px-5 pt-2 pb-3">
+    <header className="header border-bottom-line mx-5 pt-2 pb-3">
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <a className="navbar-brand" href="/">
           Fine Threads co.
