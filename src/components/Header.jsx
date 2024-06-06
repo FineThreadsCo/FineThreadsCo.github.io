@@ -1,9 +1,13 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 function Header() {
+  const location = useLocation();
+  const currentPage = location.pathname;
+
   return (
-    <header>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light nav-padding">
+    <header className="header border-bottom-line px-5 pt-2 pb-3">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <a className="navbar-brand" href="/">
           Fine Threads co.
         </a>
@@ -22,23 +26,38 @@ function Header() {
           <div className="container-fluid">
             <ul className="navbar-nav ml-auto align-far-right">
               <li className="nav-item mr-3">
-                <a className="nav-link text-dark" href="/">
+                <a
+                  className={`nav-link text-dark fs-6 underline-animation ${
+                    currentPage === "/" ? "current-tab" : ""
+                  }`}
+                  href="/"
+                >
                   Home
                 </a>
               </li>
               <li className="nav-item mr-3">
-                <a className="nav-link text-dark" href="/about">
+                <a
+                  className={`nav-link text-dark fs-6 underline-animation ${
+                    currentPage === "/about" ? "current-tab" : ""
+                  }`}
+                  href="/about"
+                >
                   About
                 </a>
               </li>
               <li className="nav-item mr-3">
-                <a className="nav-link current-page text-dark" href="/services">
+                <a
+                  className={`nav-link text-dark fs-6 underline-animation ${
+                    currentPage === "/services" ? "current-tab" : ""
+                  }`}
+                  href="/services"
+                >
                   Services
                 </a>
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-link btn btn-dark text-white px-3"
+                  className="nav-link btn btn-dark fs-6 text-white px-3 py-2"
                   href="/booking"
                 >
                   Book an Appointment

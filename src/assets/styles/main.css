@@ -1,5 +1,6 @@
 body {
   font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
   & h1 {
     font-family: "jomhuria", sans-serif;
     text-decoration: underline;
@@ -7,20 +8,12 @@ body {
   }
   & h2 {
     font-family: "Jomhuria", sans-serif;
-    font-size:3em;
+    font-size: 3em;
   }
-}
-
-.current-page {
-  text-decoration: underline;
 }
 
 .align-far-right {
   justify-content: flex-end;
-}
-
-.nav-padding {
-  padding: 2%;
 }
 
 .btn-dark {
@@ -43,10 +36,60 @@ body {
   justify-content: flex-start;
 }
 
-.container {
-  margin: 0 auto;
-}
-
 .custom-link {
   text-decoration: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: black !important;
+  color: white !important;
+}
+
+.underline-animation {
+  position: relative;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+.underline-animation.current-tab::after {
+  width: 100%;
+}
+
+/* These classes make the partial line below the header and above the footer, to act as a seperator. I think it looks cool */
+.border-top-line {
+  position: relative;
+}
+.border-top-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background-color: black;
+}
+.border-bottom-line {
+  position: relative;
+}
+.border-bottom-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background-color: black;
 }
