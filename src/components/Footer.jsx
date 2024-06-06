@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Facebook,
   Instagram,
@@ -48,23 +49,23 @@ function Footer() {
                 <ul className="list-unstyled text-small">
                   <li>
                     <p>
-                      <a className="text-muted custom-link" href="/services">
+                      <Link className="text-muted custom-link" to="/services">
                         Alterations
-                      </a>
+                      </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a className="text-muted custom-link" href="/services">
+                      <Link className="text-muted custom-link" to="/services">
                         Pickup & Dropoff
-                      </a>
+                      </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a className="text-muted custom-link" href="/services">
+                      <Link className="text-muted custom-link" to="/services">
                         Speak to an Expert
-                      </a>
+                      </Link>
                     </p>
                   </li>
                 </ul>
@@ -74,23 +75,23 @@ function Footer() {
                 <ul className="list-unstyled text-small">
                   <li>
                     <p>
-                      <a className="text-muted custom-link" href="/services">
+                      <Link className="text-muted custom-link" to="/services">
                         Weddings
-                      </a>
+                      </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a className="text-muted custom-link" href="/services">
+                      <Link className="text-muted custom-link" to="/services">
                         Fabric Selection
-                      </a>
+                      </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <a className="text-muted custom-link" href="/services">
+                      <Link className="text-muted custom-link" to="/services">
                         Loyalty Program
-                      </a>
+                      </Link>
                     </p>
                   </li>
                 </ul>
