@@ -68,6 +68,15 @@ body {
   }
 }
 
+.react-datepicker__day--selected {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.react-datepicker__day--today {
+  background-color: rgb(187, 187, 187);
+  color: black;
+}
+
 .custom-link {
   text-decoration: none;
 }

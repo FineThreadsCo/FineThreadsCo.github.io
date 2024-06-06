@@ -1,4 +1,5 @@
 import React from "react";
+import { CheckCircle } from "react-bootstrap-icons";
 
 function ConfirmationPopup({ showModal, setShowModal, email }) {
   if (!showModal) {
@@ -22,14 +23,36 @@ function ConfirmationPopup({ showModal, setShowModal, email }) {
     >
       <div
         style={{
-          width: "50%",
+          width: "40%",
           backgroundColor: "white",
-          padding: "20px",
+          padding: "2%",
           borderRadius: "10px",
+          position: "relative",
         }}
       >
-        <p>{email}</p>
-        <button onClick={() => setShowModal(false)}>Close</button>
+        <CheckCircle
+          color="green"
+          size={100}
+          style={{
+            position: "absolute",
+            top: "50%",
+            right: "7%",
+            transform: "translateY(-50%)",
+          }}
+        />
+        <h2 className="m-0">Appointment confirmed.</h2>
+        <p className="p-0 mb-3">
+          Email confirmation sent at:{" "}
+          <b>
+            <u>{email ? email : "<no email provided>"}</u>
+          </b>
+        </p>
+        <button
+          className="btn btn-dark text-white text-lg py-2 px-5"
+          onClick={() => setShowModal(false)}
+        >
+          Ok
+        </button>
       </div>
     </div>
   );
