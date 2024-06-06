@@ -58,6 +58,16 @@ body {
   justify-content: flex-start;
 }
 
+.booking-container {
+  padding: 0 15%;
+}
+
+@media (max-width: 1200px) {
+  .booking-container {
+    padding: 0;
+  }
+}
+
 .custom-link {
   text-decoration: none;
 }
