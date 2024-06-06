@@ -37,6 +37,12 @@ body {
   object-fit: cover;
 }
 
+.about-us-image-size {
+  width: 80%;
+  height: 95%;
+  object-fit: cover;
+}
+
 .nav-item {
   margin-right: 3%;
 }

@@ -42,7 +42,7 @@ function Header() {
                   }`}
                   href="/about"
                 >
-                  About
+                  About Us
                 </a>
               </li>
               <li className="nav-item mr-3">

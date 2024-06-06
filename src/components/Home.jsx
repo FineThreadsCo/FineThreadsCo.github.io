@@ -10,7 +10,6 @@ function Home() {
   return (
     <div className="pb-5 px-5">
       <h1 className="text-center">Fine Threads co.</h1>
-
       <div className="row">
         <div className="image-grid">
           <img
