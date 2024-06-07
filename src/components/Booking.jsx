@@ -23,7 +23,7 @@ function Booking() {
       </p>
 
       <div className="row border rounded my-5 p-4 mb-4">
-        <div className="col">
+        <div className="col-12 col-md">
           <div className="row">
             <div className="col">
               <label htmlFor="firstName">
@@ -64,7 +64,7 @@ function Booking() {
             </div>
           </div>
         </div>
-        <div className="col">
+        <div className="col-12 col-md">
           <div className="row">
             <div className="col">
               <label htmlFor="date-picker">
