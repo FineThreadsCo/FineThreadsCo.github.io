@@ -27,8 +27,8 @@ const faqData = [
     question: "What types of materials do you use in your tailoring work?",
     answer: [
       "We use a variety of high-quality materials in our tailoring work. Our fabrics include cotton, linen, wool, silk, and synthetics, chosen for their durability, comfort, and aesthetics. We also use strong, colorfast threads in cotton, polyester, and silk, and a range of notions like buttons, zippers, snaps, and hooks.",
-      <br />,
-      <br />,
+      <br key="br1" />,
+      <br key="br2" />,
       "If you have a specific material in mind for a custom order, we're more than happy to discuss the possibility. We'll do our best to source the material and ensure it's suitable for the garment you have in mind. Please note that the availability, cost, and suitability of the material may affect the final outcome of the order.",
     ],
   },

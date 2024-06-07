@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <header className="header border-bottom-line mx-5 pt-2 pb-3">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <Link className="navbar-brand" to="/">
           Fine Threads co.
         </Link>

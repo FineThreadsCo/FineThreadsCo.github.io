@@ -10,7 +10,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="footer bg-white text-dark border-top-line mt-auto mx-5">
+    <footer className="footer text-dark border-top-line mt-auto mx-5">
       <div className="pt-5 pb-3">
         <div className="row">
           <div className="col-md-4 d-flex flex-column justify-content-between mb-md-0 mb-4">
