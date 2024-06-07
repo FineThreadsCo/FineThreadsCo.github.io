@@ -21,16 +21,9 @@ function ConfirmationPopup({ showModal, setShowModal, email }) {
         zIndex: 9999,
       }}
     >
-      <div
-        style={{
-          width: "40%",
-          backgroundColor: "white",
-          padding: "2%",
-          borderRadius: "10px",
-          position: "relative",
-        }}
-      >
+      <div className="confirmation-popup">
         <CheckCircle
+          className="hide-on-mobile"
           color="green"
           size={100}
           style={{
@@ -42,7 +35,7 @@ function ConfirmationPopup({ showModal, setShowModal, email }) {
         />
         <h2 className="m-0">Appointment confirmed.</h2>
         <p className="p-0 mb-3">
-          Email confirmation sent at:{" "}
+          Email confirmation sent at: <br />
           <b>
             <u>{email ? email : "<no email provided>"}</u>
           </b>

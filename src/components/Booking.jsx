@@ -17,12 +17,12 @@ function Booking() {
 
   return (
     <div className="mx-5 mb-5 booking-container">
-      <h1 className="text-center">Book an Appointment</h1>
-      <p className="text-center">
+      <h1 className="text-center pb-0 mb-0">Book an Appointment</h1>
+      <p className="text-center pt-0 mt-0">
         Need advice? Need custom services? We can help.
       </p>
 
-      <div className="row border rounded p-4 mb-4">
+      <div className="row border rounded my-5 p-4 mb-4">
         <div className="col">
           <div className="row">
             <div className="col">
@@ -110,7 +110,7 @@ function Booking() {
 
       <div className="d-flex justify-content-center">
         <a
-          className="btn btn-dark text-white text-lg py-2 px-5"
+          className="btn btn-dark text-white text-lg py-2 px-5 mt-4"
           onClick={handleSubmit}
         >
           Submit

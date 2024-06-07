@@ -172,3 +172,24 @@ h2 {
   right: 0;
   border-bottom: 1px solid black;
 }
+
+.confirmation-popup {
+  width: 40%;
+  background-color: white;
+  padding: 2%;
+  border-radius: 10px;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .confirmation-popup {
+    width: 80%;
+    padding: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
