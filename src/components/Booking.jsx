@@ -84,6 +84,38 @@ function Booking() {
               </label>
               <input id="time-picker" type="time" className="form-control" />
             </div>
+            <div className="col">
+              <label htmlFor="booking-type">
+                Booking Type <span className="text-danger">*</span>
+              </label>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="bookingType"
+                  id="in-person"
+                  value="in-person"
+                  defaultChecked
+                  style={{ color: "black" }}
+                />
+                <label className="form-check-label" htmlFor="in-person">
+                  In-person
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="bookingType"
+                  id="virtual"
+                  value="virtual"
+                  style={{ color: "black" }}
+                />
+                <label className="form-check-label" htmlFor="virtual">
+                  Virtual
+                </label>
+              </div>
+            </div>
           </div>
           <div className="mt-3">
             <label htmlFor="expert-select">
