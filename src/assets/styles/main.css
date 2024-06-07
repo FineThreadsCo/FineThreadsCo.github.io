@@ -38,6 +38,7 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .nav-item {
@@ -222,4 +223,20 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .less-high {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+}
+
+.services-image {
+  height: 50%;
+  object-fit: cover;
+}
+
+.service-content {
+  margin-bottom: 1rem;
 }
