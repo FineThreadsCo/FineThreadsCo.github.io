@@ -10,10 +10,10 @@ import {
 
 function Footer() {
   return (
-    <footer className="footer mt-auto mx-5 bg-white text-dark border-top-line">
+    <footer className="footer text-dark border-top-line mt-auto mx-5">
       <div className="pt-5 pb-3">
         <div className="row">
-          <div className="col-md-4 d-flex flex-column justify-content-between">
+          <div className="col-md-4 d-flex flex-column justify-content-between mb-md-0 mb-4">
             <h6>Fine Threads co.</h6>
             <div className="icon-row">
               <Facebook
@@ -42,9 +42,9 @@ function Footer() {
               © 2001-2024, FineThreads.co, Inc. or its affiliates
             </p>
           </div>
-          <div className="col-md-8">
+          <div className="col-md-8 mb-md-0 mb-4">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 mb-md-0 mb-4">
                 <h6>Services</h6>
                 <ul className="list-unstyled text-small">
                   <li>
@@ -70,7 +70,7 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-md-0 mb-4">
                 <h6>Custom</h6>
                 <ul className="list-unstyled text-small">
                   <li>
@@ -96,7 +96,7 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 mb-md-0 mb-4">
                 <h6>Contacts</h6>
                 <ul className="list-unstyled text-small">
                   <li>

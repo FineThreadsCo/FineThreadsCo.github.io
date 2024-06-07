@@ -17,13 +17,13 @@ function Booking() {
 
   return (
     <div className="mx-5 mb-5 booking-container">
-      <h1 className="text-center">Book an Appointment</h1>
-      <p className="text-center">
+      <h1 className="text-center pb-0 mb-0">Book an Appointment</h1>
+      <p className="text-center pt-0 mt-0">
         Need advice? Need custom services? We can help.
       </p>
 
-      <div className="row border rounded p-4 mb-4">
-        <div className="col">
+      <div className="row border rounded my-5 p-4 mb-4">
+        <div className="col-12 col-md">
           <div className="row">
             <div className="col">
               <label htmlFor="firstName">
@@ -64,7 +64,7 @@ function Booking() {
             </div>
           </div>
         </div>
-        <div className="col">
+        <div className="col-12 col-md">
           <div className="row">
             <div className="col">
               <label htmlFor="date-picker">
@@ -83,6 +83,38 @@ function Booking() {
                 Select a Time <span className="text-danger">*</span>
               </label>
               <input id="time-picker" type="time" className="form-control" />
+            </div>
+            <div className="col">
+              <label htmlFor="booking-type">
+                Booking Type <span className="text-danger">*</span>
+              </label>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="bookingType"
+                  id="in-person"
+                  value="in-person"
+                  defaultChecked
+                  style={{ color: "black" }}
+                />
+                <label className="form-check-label" htmlFor="in-person">
+                  In-person
+                </label>
+              </div>
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="bookingType"
+                  id="virtual"
+                  value="virtual"
+                  style={{ color: "black" }}
+                />
+                <label className="form-check-label" htmlFor="virtual">
+                  Virtual
+                </label>
+              </div>
             </div>
           </div>
           <div className="mt-3">
@@ -110,7 +142,7 @@ function Booking() {
 
       <div className="d-flex justify-content-center">
         <a
-          className="btn btn-dark text-white text-lg py-2 px-5"
+          className="btn btn-dark text-white text-lg py-2 px-5 mt-4"
           onClick={handleSubmit}
         >
           Submit

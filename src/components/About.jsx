@@ -12,47 +12,50 @@ function About() {
   return (
     <div className="px-5">
       <h1 className="text-center">About Us</h1>
-      <div className="row mt-5">
-        <div className="col-md-6">
-          <h3 className="mb-4">Our Journey.</h3>
-          <p className="text-muted">
-            We are a family-owned tailoring business that has been serving our
-            community for over a decade. Our story began 10 years ago in the
-            city of Denver, Colorado, when we decided to turn our passion for
-            craftsmanship into a business. We started small, making socks and
-            offering basic tailoring services. But we quickly gained a
-            reputation for our meticulous attention to detail and the high
-            quality of our products.
-          </p>
-          <p className="text-muted">
-            As demand for our services grew, we expanded our product range and
-            started offering more comprehensive tailoring services. We invested
-            in modern technology and grew our team, but we never lost sight of
-            the values that our business was built on: quality, care, and
-            customer satisfaction. Today, we are proud to be a trusted name in
-            the tailoring industry.
-          </p>
-          <p className="text-muted">
-            We offer a wide range of tailoring services, from simple alterations
-            to custom-made garments. Our team of skilled and experienced tailors
-            is dedicated to meeting the needs and expectations of our customers.
-            We are grateful for the support of our customers throughout the
-            years, and we look forward to continuing to serve you in the future.
-            Thank you for being a part of our journey.
-          </p>
-        </div>
-        <div className="col-md-6">
-          <img
-            src={imageAboutUs}
-            alt="Man wearing a suit"
-            className="img-fluid about-us-image-size"
-          />
+      <div className="container">
+        <div className="row mt-5">
+          <div className="col-md-6 less-high">
+            <h3 className="mb-4">Our Journey.</h3>
+            <p className="text-muted">
+              We are a family-owned tailoring business that has been serving our
+              community for over a decade. Our story began 10 years ago in the
+              city of Denver, Colorado, when we decided to turn our passion for
+              craftsmanship into a business. We started small, making socks and
+              offering basic tailoring services. But we quickly gained a
+              reputation for our meticulous attention to detail and the high
+              quality of our products.
+            </p>
+            <p className="text-muted">
+              As demand for our services grew, we expanded our product range and
+              started offering more comprehensive tailoring services. We
+              invested in modern technology and grew our team, but we never lost
+              sight of the values that our business was built on: quality, care,
+              and customer satisfaction. Today, we are proud to be a trusted
+              name in the tailoring industry.
+            </p>
+            <p className="text-muted">
+              We offer a wide range of tailoring services, from simple
+              alterations to custom-made garments. Our team of skilled and
+              experienced tailors is dedicated to meeting the needs and
+              expectations of our customers. We are grateful for the support of
+              our customers throughout the years, and we look forward to
+              continuing to serve you in the future. Thank you for being a part
+              of our journey.
+            </p>
+          </div>
+          <div className="col-md-6 less-high">
+            <img
+              src={imageAboutUs}
+              alt="Man wearing a suit"
+              className="img-fluid about-us-image-size"
+            />
+          </div>
         </div>
       </div>
-      <div>
+      <div className="mx-auto" style={{ maxWidth: "1400px" }}>
         <h3 className="mt-5">Our Team</h3>
-        <div className="row mt-5 align-items-center">
-          <div className="col-md-5">
+        <div className="row mt-3 align-items-center flex-column-reverse flex-lg-row">
+          <div className="col-lg-5">
             <p>
               <b>Alexandra Johnson</b> - <i>Bespoke Tailoring</i>
               <br />
@@ -60,7 +63,7 @@ function About() {
               experience. She is known for her meticulous attention to detail.
             </p>
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-3 col-xl-1">
             <img
               src={profile1}
               alt="Alexandra Johnson"
@@ -68,7 +71,7 @@ function About() {
               style={{ width: "100px", height: "100px", objectFit: "cover" }}
             />
           </div>
-          <div className="col-md-5">
+          <div className="col-lg-5">
             <p>
               <b>Emily Green</b> - <i>Sustainable Fashion</i>
               <br />
@@ -77,7 +80,7 @@ function About() {
               doesn't compromise our planet.
             </p>
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-3 col-xl-1">
             <img
               src={profile5}
               alt="Emily Green"
@@ -86,8 +89,8 @@ function About() {
             />
           </div>
         </div>
-        <div className="row mt-5 align-items-center">
-          <div className="col-md-5">
+        <div className="row mt-3 align-items-center flex-column-reverse flex-lg-row">
+          <div className="col-lg-5">
             <p>
               <b>Charlotte Davis</b> - <i>Bridal Wear</i>
               <br />
@@ -96,7 +99,7 @@ function About() {
               tradition and modernity.
             </p>
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-3 col-xl-1">
             <img
               src={profile2}
               alt="Charlotte Davis"
@@ -104,7 +107,7 @@ function About() {
               style={{ width: "100px", height: "100px", objectFit: "cover" }}
             />
           </div>
-          <div className="col-md-5">
+          <div className="col-lg-5">
             <p>
               <b>Isabella Grey</b> - <i>Fabric Selection & Sourcing</i>
               <br />
@@ -113,7 +116,7 @@ function About() {
               technologies.
             </p>
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-3 col-xl-1">
             <img
               src={profile7}
               alt="Isabella Grey"
@@ -122,8 +125,8 @@ function About() {
             />
           </div>
         </div>
-        <div className="row mt-5 align-items-center">
-          <div className="col-md-5">
+        <div className="row mt-3 align-items-center flex-column-reverse flex-lg-row">
+          <div className="col-lg-5">
             <p>
               <b>Benjamin Thompson</b> - <i>Men’s Suits</i>
               <br />
@@ -132,7 +135,7 @@ function About() {
               style.
             </p>
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-3 col-xl-1">
             <img
               src={profile6}
               alt="Benjamin Thompson"
@@ -140,7 +143,7 @@ function About() {
               style={{ width: "100px", height: "100px", objectFit: "cover" }}
             />
           </div>
-          <div className="col-md-5">
+          <div className="col-lg-5">
             <p>
               <b>Daniel Walker</b> - <i>Alterations and Repairs</i>
               <br />
@@ -149,7 +152,7 @@ function About() {
               perfect fit for every client.
             </p>
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-3 col-xl-1">
             <img
               src={profile4}
               alt="Daniel Walker"
@@ -158,8 +161,8 @@ function About() {
             />
           </div>
         </div>
-        <div className="row mt-5 align-items-center">
-          <div className="col-md-5">
+        <div className="row mt-3 align-items-center flex-column-reverse flex-lg-row">
+          <div className="col-lg-5">
             <p>
               <b>Jerry Harris</b> - <i>Pattern making & Drafting</i>
               <br />
@@ -168,7 +171,7 @@ function About() {
               exceptional fit.
             </p>
           </div>
-          <div className="col-md-1">
+          <div className="col-lg-3 col-xl-1">
             <img
               src={profile3}
               alt="Jerry Harris"
