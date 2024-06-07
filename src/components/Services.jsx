@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const content = [
   {
     title: "Clothing Alterations",
+    id: "clothing-alterations",
     price: "Starting at 14.99$",
     paragraph:
       "Experience the perfect fit with our professional clothing alteration services. From minor adjustments to major resizing, our skilled tailors will transform your ill-fitting garments into a flattering, comfortable wardrobe.",
@@ -12,6 +13,7 @@ const content = [
   },
   {
     title: "Custom Tailoring",
+    id: "custom-tailoring",
     price: "See in store for pricing.",
     paragraph:
       "Indulge in the luxury of bespoke fashion with our custom tailoring services. Our expert tailors will work closely with you to create one-of-a-kind garments that reflect your personal style and fit you impeccably, ensuring you make a lasting impression in every setting.",
@@ -20,6 +22,7 @@ const content = [
   },
   {
     title: "Vintage Restoration",
+    id: "vintage-restoration",
     price: "Starting at 39.99$",
     paragraph:
       "Breathe new life into your cherished vintage garments with our meticulous restoration services. Our experienced tailors will skillfully repair and refit your timeless pieces, preserving their unique charm and ensuring they can be enjoyed for years to come.",
@@ -28,6 +31,7 @@ const content = [
   },
   {
     title: "Dry Cleaning and Laundry Services",
+    id: "dry-cleaning-and-laundry-services",
     price: [
       "Self serve starting at 14.99$",
       <br />,
@@ -50,7 +54,7 @@ function Services() {
       {content.map((item, index) => (
         <div className="row mb-4" key={index}>
           <div className={`col-md-6 order-${index % 2}`}>
-            <h2>{item.title}</h2>
+            <h2 id={item.id}>{item.title}</h2>
             <p>
               <i>{item.price}</i>
             </p>
