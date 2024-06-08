@@ -26,14 +26,27 @@ const images = [
 
 function ImageGrid() {
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{ display: "flex", flexDirection: "column", height: "100%" }}
+    >
       <div className="row g-0">
-        <div className="col-md-6">
+        <div
+          className="col-md-6"
+          style={{ display: "flex", flexDirection: "column" }}
+        >
           {images
             .filter((_, index) => index % 2 === 0)
             .map((image, index) => (
-              <Link to={image.link} key={index}>
-                <div className="image-container">
+              <Link
+                to={image.link}
+                key={index}
+                style={{
+                  flex: index === 0 ? 3 : 1,
+                  height: "auto",
+                }}
+              >
+                <div className="image-container" style={{ height: "100%" }}>
                   <img
                     src={image.src}
                     className="img-fluid"
@@ -47,12 +60,22 @@ function ImageGrid() {
               </Link>
             ))}
         </div>
-        <div className="col-md-6">
+        <div
+          className="col-md-6"
+          style={{ display: "flex", flexDirection: "column" }}
+        >
           {images
             .filter((_, index) => index % 2 !== 0)
             .map((image, index) => (
-              <Link to={image.link} key={index}>
-                <div className="image-container">
+              <Link
+                to={image.link}
+                key={index}
+                style={{
+                  flex: index === 0 ? 1 : 3,
+                  height: "auto",
+                }}
+              >
+                <div className="image-container" style={{ height: "100%" }}>
                   <img
                     src={image.src}
                     className="img-fluid"
@@ -70,5 +93,4 @@ function ImageGrid() {
     </div>
   );
 }
-
 export default ImageGrid;
