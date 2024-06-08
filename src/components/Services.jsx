@@ -53,24 +53,33 @@ function Services() {
     <div className="mx-5">
       <div className="mx-auto mb-5" style={{ maxWidth: "1200px" }}>
         <h1 className="text-center pb-0 mb-0">Services</h1>
-        <p className="text-center pt-0 mt-0">
+        <p className="text-center pt-0 mt-0 mb-5">
           Speak to one of our experts today. We're here to help.
         </p>
         {content.map((item, index) => (
           <div className="row mb-4" key={index}>
             <div className={`col-12 col-md-6 order-0 order-md-${index % 2}`}>
-              <div className="service-content">
-                <h2 id={item.id}>{item.title}</h2>
-                <p>
-                  <i>{item.price}</i>
-                </p>
-                <p>{item.paragraph}</p>
+              <div
+                className="service-content px-3 py-2 d-flex flex-column justify-content-between"
+                style={{ height: "100%" }}
+              >
+                <div>
+                  <h2 id={item.id}>{item.title}</h2>
+                  <p>
+                    <i>{item.price}</i>
+                  </p>
+                  <p className="text-muted" style={{ textAlign: "justify" }}>
+                    {item.paragraph}
+                  </p>
+                </div>
+                <div>
+                  <Link to="/booking" key={`link-${index}`}>
+                    <button className="btn btn-dark text-white text-lg mb-3 w-100">
+                      Book an Appointment
+                    </button>
+                  </Link>
+                </div>
               </div>
-              <Link to="/booking" key={`link-${index}`}>
-                <button className="btn btn-dark text-white text-lg mb-3">
-                  Book an Appointment
-                </button>
-              </Link>
             </div>
             <div
               className={`col-12 col-md-6 order-1 order-md-${(index + 1) % 2}`}
