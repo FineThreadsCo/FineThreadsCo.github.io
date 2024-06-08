@@ -16,7 +16,7 @@ function About() {
         <div className="row mt-5">
           <div className="col-md-6 less-high">
             <h3 className="mb-4">Our Journey.</h3>
-            <p className="text-muted">
+            <p className="text-muted" style={{ textAlign: "justify" }}>
               We are a family-owned tailoring business that has been serving our
               community for over a decade. Our story began 10 years ago in the
               city of Denver, Colorado, when we decided to turn our passion for
@@ -25,7 +25,7 @@ function About() {
               reputation for our meticulous attention to detail and the high
               quality of our products.
             </p>
-            <p className="text-muted">
+            <p className="text-muted" style={{ textAlign: "justify" }}>
               As demand for our services grew, we expanded our product range and
               started offering more comprehensive tailoring services. We
               invested in modern technology and grew our team, but we never lost
@@ -33,7 +33,7 @@ function About() {
               and customer satisfaction. Today, we are proud to be a trusted
               name in the tailoring industry.
             </p>
-            <p className="text-muted">
+            <p className="text-muted" style={{ textAlign: "justify" }}>
               We offer a wide range of tailoring services, from simple
               alterations to custom-made garments. Our team of skilled and
               experienced tailors is dedicated to meeting the needs and

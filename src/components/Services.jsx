@@ -68,7 +68,9 @@ function Services() {
                   <p>
                     <i>{item.price}</i>
                   </p>
-                  <p>{item.paragraph}</p>
+                  <p className="text-muted" style={{ textAlign: "justify" }}>
+                    {item.paragraph}
+                  </p>
                 </div>
                 <div>
                   <Link to="/booking" key={`link-${index}`}>
