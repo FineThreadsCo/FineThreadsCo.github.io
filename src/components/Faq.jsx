@@ -46,7 +46,7 @@ const faqData = [
 
 function FAQ() {
   return (
-    <div className="py-5">
+    <div className="py-5 px-3">
       <h2>FAQ</h2>
       <div className="accordion" id="accordionFAQ">
         {faqData.map((item, index) => (

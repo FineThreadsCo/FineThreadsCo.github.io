@@ -128,7 +128,7 @@ function Booking() {
                   style={{ color: "black" }}
                 />
                 <label className="form-check-label" htmlFor="virtual">
-                  Virtual
+                  Virtual (Zoom)
                 </label>
               </div>
             </div>

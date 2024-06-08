@@ -52,7 +52,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="mx-auto" style={{ maxWidth: "1400px" }}>
+      <div className="container mx-auto mb-5" style={{ maxWidth: "1400px" }}>
         <h3 className="mt-5">Our Team</h3>
         <div className="row mt-3 align-items-center flex-column-reverse flex-lg-row">
           <div className="col-lg-5">
