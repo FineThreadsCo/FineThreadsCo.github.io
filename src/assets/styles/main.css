@@ -10,6 +10,12 @@ h1 {
   font-size: 6em;
 }
 
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
 h2 {
   font-family: "Jomhuria", sans-serif;
   font-size: 3em;
@@ -215,6 +221,12 @@ img {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .image-container .overlay {
+    opacity: 1;
+  }
+}
+
 .image-container .text {
   color: white;
   font-size: 300%;
@@ -223,6 +235,12 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .image-container .text {
+    font-size: 200%;
+  }
 }
 
 @media (min-width: 1000px) {
