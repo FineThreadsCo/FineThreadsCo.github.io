@@ -64,7 +64,7 @@ function Services() {
                 style={{ height: "100%" }}
               >
                 <div>
-                  <h2 id={item.id}>{item.title}</h2>
+                  <h3 id={item.id}>{item.title}</h3>
                   <p>
                     <i>{item.price}</i>
                   </p>

@@ -28,9 +28,9 @@ function Home() {
       <ImageGrid className="mx-5 px-5" />
       <FAQ />
       <div>
-        <h2 className="text-center">
+        <h3 className="text-center">
           Book an appointment today, and speak to our experts:
-        </h2>
+        </h3>
         <div className="d-flex justify-content-center">
           <Link
             className="btn btn-dark text-white text-lg py-2 px-5"
