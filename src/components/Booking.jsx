@@ -23,9 +23,9 @@ function Booking() {
       </p>
 
       <div className="row border rounded my-5 p-4 mb-4">
-        <div className="col-12 col-md">
+        <div className="col-12 col-md mb-2">
           <div className="row">
-            <div className="col">
+            <div className="col-12 col-md mb-2">
               <label htmlFor="firstName">
                 First Name <span className="text-danger">*</span>
               </label>
@@ -36,7 +36,7 @@ function Booking() {
                 placeholder="John"
               />
             </div>
-            <div className="col">
+            <div className="col-12 col-md mb-2">
               <label htmlFor="lastName">
                 Last Name <span className="text-danger">*</span>
               </label>
@@ -49,7 +49,7 @@ function Booking() {
             </div>
           </div>
           <div className="row mt-3">
-            <div className="col">
+            <div className="col-12 col-md mb-2">
               <label htmlFor="email">
                 Email Address <span className="text-danger">*</span>
               </label>
@@ -62,11 +62,27 @@ function Booking() {
                 onChange={(e) => setEmail(e.target.value)} // update the email state when the input changes
               />
             </div>
+            <div className="col-12 col-md mb-2">
+              <label htmlFor="service-select">
+                Select an service: <span className="text-danger">*</span>
+              </label>
+              <select
+                id="service-select"
+                className="form-select"
+                value={selectedExpert}
+                onChange={(e) => setSelectedExpert(e.target.value)}
+              >
+                <option>Clothing Alterations</option>
+                <option>Custom Tailoring</option>
+                <option>Vintage Restauration</option>
+                <option>Dry Cleaning and Laundry Services</option>
+              </select>
+            </div>
           </div>
         </div>
-        <div className="col-12 col-md">
+        <div className="col-12 col-md mb-2">
           <div className="row">
-            <div className="col">
+            <div className="col-12 col-md mb-2">
               <label htmlFor="date-picker">
                 Select a Date <span className="text-danger">*</span>
               </label>
@@ -78,13 +94,13 @@ function Booking() {
                 />
               </div>
             </div>
-            <div className="col">
+            <div className="col-12 col-md mb-2">
               <label htmlFor="time-picker">
                 Select a Time <span className="text-danger">*</span>
               </label>
               <input id="time-picker" type="time" className="form-control" />
             </div>
-            <div className="col">
+            <div className="col-12 col-md mb-2">
               <label htmlFor="booking-type">
                 Booking Type <span className="text-danger">*</span>
               </label>
@@ -119,8 +135,7 @@ function Booking() {
           </div>
           <div className="mt-3">
             <label htmlFor="expert-select">
-              Select an Expert for the service that you need:{" "}
-              <span className="text-danger">*</span>
+              Select an Expert: <span className="text-danger">*</span>
             </label>
             <select
               id="expert-select"
