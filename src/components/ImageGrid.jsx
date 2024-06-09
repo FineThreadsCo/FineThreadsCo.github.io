@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import grid1 from "../assets/images/grid1.jpg";
 import grid2 from "../assets/images/grid2.jpg";
@@ -25,6 +25,19 @@ const images = [
 ];
 
 function ImageGrid() {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div
       className="container"
@@ -51,9 +64,26 @@ function ImageGrid() {
                     src={image.src}
                     className="img-fluid"
                     alt={`Image ${index * 2 + 1}`}
-                    style={{ height: "100%", objectFit: "cover" }}
+                    style={{
+                      height: "100%",
+                      objectFit: "cover",
+                      borderRadius: isDesktop
+                        ? index === 0
+                          ? "15px 0 0 0"
+                          : "0 0 0 15px"
+                        : "0",
+                    }}
                   />
-                  <div className="overlay">
+                  <div
+                    className="overlay"
+                    style={{
+                      borderRadius: isDesktop
+                        ? index === 0
+                          ? "15px 0 0 0"
+                          : "0 0 0 15px"
+                        : "0",
+                    }}
+                  >
                     <div className="text">{image.text}</div>
                   </div>
                 </div>
@@ -80,9 +110,26 @@ function ImageGrid() {
                     src={image.src}
                     className="img-fluid"
                     alt={`Image ${index * 2 + 2}`}
-                    style={{ height: "100%", objectFit: "cover" }}
+                    style={{
+                      height: "100%",
+                      objectFit: "cover",
+                      borderRadius: isDesktop
+                        ? index === 0
+                          ? "0 15px 0 0"
+                          : "0 0 15px 0"
+                        : "0",
+                    }}
                   />
-                  <div className="overlay">
+                  <div
+                    className="overlay"
+                    style={{
+                      borderRadius: isDesktop
+                        ? index === 0
+                          ? "0 15px 0 0"
+                          : "0 0 15px 0"
+                        : "0",
+                    }}
+                  >
                     <div className="text">{image.text}</div>
                   </div>
                 </div>
@@ -93,4 +140,5 @@ function ImageGrid() {
     </div>
   );
 }
+
 export default ImageGrid;
