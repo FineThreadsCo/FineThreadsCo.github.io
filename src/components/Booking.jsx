@@ -76,6 +76,7 @@ function Booking() {
                 <option>Custom Tailoring</option>
                 <option>Vintage Restauration</option>
                 <option>Dry Cleaning and Laundry Services</option>
+                <option>Free Online Consultation</option>
               </select>
             </div>
           </div>
