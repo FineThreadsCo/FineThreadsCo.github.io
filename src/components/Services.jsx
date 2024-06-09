@@ -66,7 +66,7 @@ function Services() {
           <div className="row mb-4" key={index}>
             <div className={`col-12 col-md-6 order-0 order-md-${index % 2}`}>
               <div
-                className="service-content px-3 pt-4 d-flex flex-column justify-content-between"
+                className="service-content px-3 pt-4 border rounded d-flex flex-column justify-content-between"
                 style={{ height: "100%" }}
               >
                 <div>
