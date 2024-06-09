@@ -17,7 +17,7 @@ function Home() {
         team of experienced and passionate tailors is dedicated to providing you
         with the highest quality workmanship and attention to detail.
       </p>
-      <div className="d-flex justify-content-center mb-4">
+      <div className="d-flex justify-content-center mb-5">
         <Link
           className="btn btn-dark text-white text-lg py-2 px-5"
           to="/booking"
@@ -25,8 +25,10 @@ function Home() {
           Book an appointment today!
         </Link>
       </div>
-      <ImageGrid className="mx-5 px-5" />
-      <FAQ />
+      <div className="container mx-auto" style={{ maxWidth: "1400px" }}>
+        <ImageGrid />
+        <FAQ />
+      </div>
       <div>
         <h3 className="text-center">
           Book an appointment today, and speak to our experts:
