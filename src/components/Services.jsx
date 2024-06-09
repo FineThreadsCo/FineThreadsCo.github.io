@@ -4,6 +4,7 @@ import service1 from "../assets/images/service1.jpg";
 import service2 from "../assets/images/service2.jpg";
 import service3 from "../assets/images/service3.jpg";
 import service4 from "../assets/images/service4.jpg";
+import service5 from "../assets/images/service5.jpg";
 
 const content = [
   {
@@ -45,6 +46,15 @@ const content = [
       "Maintain the pristine condition of your garments with our convenient dry cleaning and laundry services. Our expert cleaners will treat your clothes with the utmost care, using state-of-the-art equipment and eco-friendly products to ensure they look and feel their best.",
     imageSrc: service4,
     imageAlt: "Dry cleaning and laundry services image",
+  },
+  {
+    title: "Online Consultation",
+    id: "online-consultation",
+    price: "Free",
+    paragraph:
+      "Need advice? Need custom services? We can help. Book a free online consultation with our expert tailors to discuss your unique needs and explore the possibilities of bespoke fashion.",
+    imageSrc: service5,
+    imageAlt: "Online consultation image",
   },
 ];
 
