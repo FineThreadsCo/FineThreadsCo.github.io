@@ -6,6 +6,9 @@ import "react-datepicker/dist/react-datepicker.css";
 function Booking() {
   const [showModal, setShowModal] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedService, setSelectedService] = useState(
+    "Clothing Alterations"
+  );
   const [selectedExpert, setSelectedExpert] = useState(
     "Alexandra Johnson - Bespoke Tailoring"
   );
@@ -69,8 +72,8 @@ function Booking() {
               <select
                 id="service-select"
                 className="form-select"
-                value={selectedExpert}
-                onChange={(e) => setSelectedExpert(e.target.value)}
+                value={selectedService}
+                onChange={(e) => setSelectedService(e.target.value)}
               >
                 <option>Clothing Alterations</option>
                 <option>Custom Tailoring</option>
