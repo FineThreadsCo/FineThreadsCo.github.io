@@ -53,8 +53,14 @@ function Services() {
     <div className="mx-5">
       <div className="mx-auto mb-5" style={{ maxWidth: "1200px" }}>
         <h1 className="text-center pb-0 mb-0">Services</h1>
-        <p className="text-center pt-0 mt-0 mb-5">
-          Speak to one of our experts today. We're here to help.
+        <p
+          className="text-muted mx-auto pt-0 mt-0 mb-5"
+          style={{ maxWidth: "600px", textAlign: "justify" }}
+        >
+          We provide a variety of tailoring services to meet your unique needs,
+          from simple alterations to complete custom designs. Our experienced
+          and skilled tailors are committed to delivering the highest quality
+          workmanship and attention to detail.
         </p>
         {content.map((item, index) => (
           <div className="row mb-4" key={index}>

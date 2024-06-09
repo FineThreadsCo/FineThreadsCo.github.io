@@ -9,13 +9,72 @@ import profile6 from "../assets/images/profile6.jpg";
 import profile7 from "../assets/images/profile7.jpg";
 
 function About() {
+  const teamMembers = [
+    {
+      name: "Alexandra Johnson",
+      role: "Bespoke Tailoring",
+      description:
+        "Alexandra is a master of bespoke tailoring with over 20 years of experience. She is known for her meticulous attention to detail.",
+      image: profile1,
+      alt: "Alexandra Johnson",
+    },
+    {
+      name: "Emily Green",
+      role: "Sustainable Fashion",
+      description:
+        "Emily is passionate about sustainable fashion and is always looking for eco-friendly materials. She believes in fashion that doesn't compromise our planet.",
+      image: profile5,
+      alt: "Emily Green",
+    },
+    {
+      name: "Charlotte Davis",
+      role: "Bridal Wear",
+      description:
+        "Charlotte specializes in creating stunning bridal wear that captures the essence of each bride. Her designs are a blend of tradition and modernity.",
+      image: profile2,
+      alt: "Charlotte Davis",
+    },
+    {
+      name: "Isabella Grey",
+      role: "Fabric Selection & Sourcing",
+      description:
+        "Isabella has a keen eye for quality fabrics and ensures we source the best materials. She is constantly exploring new fabric technologies.",
+      image: profile7,
+      alt: "Isabella Grey",
+    },
+    {
+      name: "Benjamin Thompson",
+      role: "Men’s Suits",
+      description:
+        "Benjamin is an expert in men's suits and ensures every piece is tailored to perfection. His suits are a testament to timeless style.",
+      image: profile6,
+      alt: "Benjamin Thompson",
+    },
+    {
+      name: "Daniel Walker",
+      role: "Alterations and Repairs",
+      description:
+        "Daniel is our go-to person for alterations and repairs, always delivering impeccable work. He is dedicated to ensuring the perfect fit for every client.",
+      image: profile4,
+      alt: "Daniel Walker",
+    },
+    {
+      name: "Jerry Harris",
+      role: "Pattern making & Drafting",
+      description:
+        "Jerry is a master of pattern making and drafting, bringing designs to life with precision. His patterns are the foundation of our exceptional fit.",
+      image: profile3,
+      alt: "Jerry Harris",
+    },
+  ];
+
   return (
     <div className="px-5">
       <h1 className="text-center">About Us</h1>
-      <div className="container">
+      <div className="container mx-auto" style={{ maxWidth: "1400px" }}>
         <div className="row mt-5">
           <div className="col-md-6 less-high">
-            <h3 className="mb-4">Our Journey.</h3>
+            <h3 className="mb-4">Our Journey</h3>
             <p className="text-muted" style={{ textAlign: "justify" }}>
               We are a family-owned tailoring business that has been serving our
               community for over a decade. Our story began 10 years ago in the
@@ -51,134 +110,32 @@ function About() {
             />
           </div>
         </div>
-      </div>
-      <div className="container mx-auto mb-5" style={{ maxWidth: "1400px" }}>
         <h3 className="mt-5">Our Team</h3>
-        <div className="row mt-3 align-items-center flex-column-reverse flex-lg-row">
-          <div className="col-lg-5">
-            <p>
-              <b>Alexandra Johnson</b> - <i>Bespoke Tailoring</i>
-              <br />
-              Alexandra is a master of bespoke tailoring with over 20 years of
-              experience. She is known for her meticulous attention to detail.
-            </p>
-          </div>
-          <div className="col-lg-3 col-xl-1">
-            <img
-              src={profile1}
-              alt="Alexandra Johnson"
-              className="img-fluid rounded-circle mb-3"
-              style={{ width: "100px", height: "100px", objectFit: "cover" }}
-            />
-          </div>
-          <div className="col-lg-5">
-            <p>
-              <b>Emily Green</b> - <i>Sustainable Fashion</i>
-              <br />
-              Emily is passionate about sustainable fashion and is always
-              looking for eco-friendly materials. She believes in fashion that
-              doesn't compromise our planet.
-            </p>
-          </div>
-          <div className="col-lg-3 col-xl-1">
-            <img
-              src={profile5}
-              alt="Emily Green"
-              className="img-fluid rounded-circle mb-3"
-              style={{ width: "100px", height: "100px", objectFit: "cover" }}
-            />
-          </div>
-        </div>
-        <div className="row mt-3 align-items-center flex-column-reverse flex-lg-row">
-          <div className="col-lg-5">
-            <p>
-              <b>Charlotte Davis</b> - <i>Bridal Wear</i>
-              <br />
-              Charlotte specializes in creating stunning bridal wear that
-              captures the essence of each bride. Her designs are a blend of
-              tradition and modernity.
-            </p>
-          </div>
-          <div className="col-lg-3 col-xl-1">
-            <img
-              src={profile2}
-              alt="Charlotte Davis"
-              className="img-fluid rounded-circle mb-3"
-              style={{ width: "100px", height: "100px", objectFit: "cover" }}
-            />
-          </div>
-          <div className="col-lg-5">
-            <p>
-              <b>Isabella Grey</b> - <i>Fabric Selection & Sourcing</i>
-              <br />
-              Isabella has a keen eye for quality fabrics and ensures we source
-              the best materials. She is constantly exploring new fabric
-              technologies.
-            </p>
-          </div>
-          <div className="col-lg-3 col-xl-1">
-            <img
-              src={profile7}
-              alt="Isabella Grey"
-              className="img-fluid rounded-circle mb-3"
-              style={{ width: "100px", height: "100px", objectFit: "cover" }}
-            />
-          </div>
-        </div>
-        <div className="row mt-3 align-items-center flex-column-reverse flex-lg-row">
-          <div className="col-lg-5">
-            <p>
-              <b>Benjamin Thompson</b> - <i>Men’s Suits</i>
-              <br />
-              Benjamin is an expert in men's suits and ensures every piece is
-              tailored to perfection. His suits are a testament to timeless
-              style.
-            </p>
-          </div>
-          <div className="col-lg-3 col-xl-1">
-            <img
-              src={profile6}
-              alt="Benjamin Thompson"
-              className="img-fluid rounded-circle mb-3"
-              style={{ width: "100px", height: "100px", objectFit: "cover" }}
-            />
-          </div>
-          <div className="col-lg-5">
-            <p>
-              <b>Daniel Walker</b> - <i>Alterations and Repairs</i>
-              <br />
-              Daniel is our go-to person for alterations and repairs, always
-              delivering impeccable work. He is dedicated to ensuring the
-              perfect fit for every client.
-            </p>
-          </div>
-          <div className="col-lg-3 col-xl-1">
-            <img
-              src={profile4}
-              alt="Daniel Walker"
-              className="img-fluid rounded-circle mb-3"
-              style={{ width: "100px", height: "100px", objectFit: "cover" }}
-            />
-          </div>
-        </div>
-        <div className="row mt-3 align-items-center flex-column-reverse flex-lg-row">
-          <div className="col-lg-5">
-            <p>
-              <b>Jerry Harris</b> - <i>Pattern making & Drafting</i>
-              <br />
-              Jerry is a master of pattern making and drafting, bringing designs
-              to life with precision. His patterns are the foundation of our
-              exceptional fit.
-            </p>
-          </div>
-          <div className="col-lg-3 col-xl-1">
-            <img
-              src={profile3}
-              alt="Jerry Harris"
-              className="img-fluid rounded-circle mb-3"
-              style={{ width: "100px", height: "100px", objectFit: "cover" }}
-            />
-          </div>
+        <div className="row mb-5">
+          {teamMembers.map((member, index) => (
+            <div className="col-lg-6" key={index}>
+              <div className="row mt-3 align-items-center">
+                <div className="col-12 col-lg-8">
+                  <p className="mb-2">
+                    <b>{member.name}</b> - <i>{member.role}</i>
+                  </p>
+                  <p className="text-muted">{member.description}</p>
+                </div>
+                <div className="col-12 col-lg-4">
+                  <img
+                    src={member.image}
+                    alt={member.alt}
+                    className="img-fluid rounded-circle mb-3"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
