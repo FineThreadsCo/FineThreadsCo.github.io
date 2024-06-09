@@ -33,7 +33,7 @@ function ConfirmationPopup({ showModal, setShowModal, email }) {
             transform: "translateY(-50%)",
           }}
         />
-        <h2 className="m-0">Appointment confirmed.</h2>
+        <h3 className="m-0">Appointment confirmed.</h3>
         <p className="p-0 mb-3">
           Email confirmation sent at: <br />
           <b>
