@@ -49,22 +49,31 @@ function Footer() {
                 <ul className="list-unstyled text-small">
                   <li>
                     <p>
-                      <Link className="text-muted custom-link" to="/services">
+                      <Link
+                        className="text-muted custom-link"
+                        to="/services#clothing-alterations"
+                      >
                         Alterations
                       </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <Link className="text-muted custom-link" to="/services">
-                        Pickup & Dropoff
+                      <Link
+                        className="text-muted custom-link"
+                        to="/services#vintage-restoration"
+                      >
+                        Vintage Restoration
                       </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <Link className="text-muted custom-link" to="/services">
-                        Speak to an Expert
+                      <Link
+                        className="text-muted custom-link"
+                        to="/services#online-consultation"
+                      >
+                        Online Consultation
                       </Link>
                     </p>
                   </li>
@@ -75,22 +84,22 @@ function Footer() {
                 <ul className="list-unstyled text-small">
                   <li>
                     <p>
-                      <Link className="text-muted custom-link" to="/services">
+                      <Link className="text-muted custom-link" to="/booking">
                         Weddings
                       </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <Link className="text-muted custom-link" to="/services">
-                        Fabric Selection
+                      <Link className="text-muted custom-link" to="/booking">
+                        Custom Fabrics
                       </Link>
                     </p>
                   </li>
                   <li>
                     <p>
-                      <Link className="text-muted custom-link" to="/services">
-                        Loyalty Program
+                      <Link className="text-muted custom-link" to="/booking">
+                        Speak to an Expert
                       </Link>
                     </p>
                   </li>
